@@ -19,7 +19,16 @@ export default function InteractiveLoadingScreen({ onFinish }) {
       }
     };
 
+    const handleTouchOrClick = () => {
+      if (!started) {
+        console.log("Touch or click detected, starting loading animation.");
+        setStarted(true);
+      }
+    };
+
     window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("click", handleTouchOrClick);
+    window.addEventListener("touchstart", handleTouchOrClick);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [started]);
 
