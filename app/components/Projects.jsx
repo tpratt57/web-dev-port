@@ -72,9 +72,7 @@ export default function Projects() {
             <p className="mb-4">
               An updated, modern website for a local barbershop. This project 
               focuses on clean UI, simple scheduling integrations, and strong 
-              branding to reflect the barber’s unique style. It’s an excellent 
-              opportunity to highlight your skills in client collaboration, 
-              user‐centric design, and Next.js best practices.
+              branding to reflect the barber’s unique style. 
             </p>
             <a
               href="#"
