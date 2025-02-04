@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ParticleBackground from "./ParticleBackground";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,10 +25,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <section
+<section
       ref={heroRef}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 relative"
+      // Removes the inline background style
+      className="animate-gradient min-h-screen flex items-center justify-center relative"
     >
+      <ParticleBackground />
       <div className="text-white text-center">
         <h1 className="text-4xl md:text-6xl font-bold">Hi, I'm Trevor</h1>
         <p className="text-xl md:text-2xl">Full Stack Web Developer & Designer</p>

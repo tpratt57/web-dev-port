@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { Typewriter } from "react-simple-typewriter";
+import ParticleBackground from "./ParticleBackground";
 
 export default function InteractiveLoadingScreen({ onFinish }) {
   const [started, setStarted] = useState(false);
@@ -51,8 +52,10 @@ export default function InteractiveLoadingScreen({ onFinish }) {
       ref={containerRef}
       className="interactive-loading fixed inset-0 flex flex-col justify-center items-center z-50 animate-gradient"
     >
+      <ParticleBackground />
       {!started ? (
         <div className="text-white text-3xl font-bold drop-shadow-lg">
+
           <Typewriter
             words={["Press any key to start"]}
             loop={false}

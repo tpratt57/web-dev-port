@@ -9,7 +9,7 @@ import ParticleBackground from "./components/ParticleBackground";
 export default function Home() {
   return (
     <LoadingWrapper>
-      <ParticleBackground/>
+      <ParticleBackground />
       <Hero />
       <About />
       <Projects />

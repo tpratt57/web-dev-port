@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particles Test</title>
+    <style>
+      html, body { margin: 0; padding: 0; height: 100%; }
+      #tsparticles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
+    </style>
+    <!-- Use a CDN version (for testing only) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-tsparticles@2.12.2/dist/react-tsparticles.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const { Particles } = window["reactTsparticles"];
+      const App = () => {
+        return React.createElement(Particles, {
+          id: "tsparticles",
+          options: {
+            background: { color: { value: "#000000" } },
+            fpsLimit: 60,
+            particles: {
+              number: { value: 80, density: { enable: true, area: 800 } },
+              color: { value: "#ffffff" },
+              shape: { type: "circle" },
+              opacity: { value: 0.5 },
+              size: { value: { min: 1, max: 5 } },
+              move: { enable: true, speed: 2 },
+              links: {
+                enable: true,
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.5,
+                width: 1,
+              },
+            },
+            detectRetina: true,
+          },
+          style: {
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          },
+        });
+      };
+
+      ReactDOM.render(React.createElement(App), document.getElementById("root"));
+    </script>
+  </body>
+</html>

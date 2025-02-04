@@ -28,18 +28,18 @@ const ParticleBackground = () => {
         left: 0,
         width: "100%",
         height: "100%",
-        zIndex: -1,
+        zIndex: 8888,
       }}
       options={{
-        background: { color: { value: "transparent" } },
-        fpsLimit: 60,
+        background: { color: { value: "" } },
+        fpsLimit: 120,
         interactivity: {
           events: {
             onHover: { enable: true, mode: "repulse" },
             resize: true,
           },
           modes: {
-            repulse: { distance: 100, duration: 0.4 },
+            repulse: { distance: 100, duration: 1.0 },
           },
         },
         particles: {
@@ -48,7 +48,7 @@ const ParticleBackground = () => {
             color: "#ffffff",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 1.0,
             width: 1,
           },
           collisions: { enable: false },
