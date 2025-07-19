@@ -17,7 +17,7 @@ export default function Projects() {
               bring the Gemini concept to life.
             </p>
             <a
-              href="https://main.d2i1x0j55yopcy.amplifyapp.com/"
+              href="https://gemini-clone-gamma-rust.vercel.app"
               className="text-[var(--color-red-main)] hover:text-[var(--color-red-dark)] underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -36,7 +36,7 @@ export default function Projects() {
               and a familiar layout for music discovery.
             </p>
             <a
-              href="https://main.drs7zdedy3e5d.amplifyapp.com/"
+              href="https://spotify-clone-mu-pied.vercel.app"
               className="text-[var(--color-red-main)] hover:text-[var(--color-red-dark)] underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +57,7 @@ export default function Projects() {
               opportunities.
             </p>
             <a
-              href="https://www.ambassadorsofhumanity.org/"
+              href="https://ambassadors-of-humanity.vercel.app"
               className="text-[var(--color-red-main)] hover:text-[var(--color-red-dark)] underline"
               target="_blank"
               rel="noopener noreferrer"
